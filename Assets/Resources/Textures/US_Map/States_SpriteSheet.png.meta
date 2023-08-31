@@ -1,0 +1,1319 @@
+fileFormatVersion: 2
+guid: 906b18fa1dd984e118f6e39600f00cb4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: States_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1899
+        width: 634
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0985dbfebe0d946589c1ae0d63773681
+      internalID: -928577395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 2209
+        width: 384
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da5d2b6710e84462b7a6fa20f09cd9c
+      internalID: 1292862373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1511
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47febc1547a554e6093214f599c08da6
+      internalID: 2067049817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 1969
+        width: 354
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fb6886227b84887b22dd81ecf31dee
+      internalID: -1074581913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 2117
+        width: 489
+        height: 407
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c0d0d23ee3c4d15a59c74af8933501
+      internalID: -1822216630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 1769
+        width: 477
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26eabd4be44674928aaf0c6e1d6d7d7f
+      internalID: -844332595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 1589
+        width: 248
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d208732ec769345839808ce0d90a0a89
+      internalID: -132419801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 1705
+        width: 324
+        height: 481
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d335e9c18d0e34a688613e7e5d433f1e
+      internalID: 1051485908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 2192
+        width: 460
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21a7449b1e6849a29cd109352d2f7a8
+      internalID: -1542786307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1239
+        width: 371
+        height: 631
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a6af68f275b4d63b11ca43e8d2e8d4
+      internalID: 1799114651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1662
+        width: 284
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded3d08b8068c42469a77910c3bc6fb8
+      internalID: 620326755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 1647
+        width: 114
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d26721177ed847debc854ac4911160b
+      internalID: 1399713156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 1844
+        width: 193
+        height: 261
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea9a7d55a864496eb5a7aa18b6efef3
+      internalID: -200918331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1584
+        width: 360
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461f38db863fa4f50b83384b4570e79b
+      internalID: -584583528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1198
+        width: 333
+        height: 373
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a360d1560d8c34d7c8cb240fabea8cdc
+      internalID: 891513860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 1642
+        width: 99
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc48970b828447af8105c772c880c50
+      internalID: -1022329195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 1361
+        width: 393
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cc62993d4cf465f9ef4118add445f9
+      internalID: -1669941718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 748
+        width: 284
+        height: 470
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efbedcf9553b046bba9e67e44f80745d
+      internalID: -1363472648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 0
+        width: 296
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75fab030169b5429cb1bc88ba2652088
+      internalID: 1345406860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 9
+        width: 241
+        height: 224
+      alignment: 9
+      pivot: {x: 1.4385144, y: -5.7771673}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7fe583ce38b74c2aa0aaddd8c7609ef
+      internalID: 583601429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 835
+        width: 313
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3dcabc0e64524dc3a96593d9cc3d4aa
+      internalID: 1193126721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1355
+        width: 202
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297ac16db2fc04e0b8c9296db19fb595
+      internalID: 353693589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 826
+        width: 281
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556b10b1ab7124df2a2f1d8fe6139be5
+      internalID: 1921156359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 890
+        width: 230
+        height: 346
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0bef8af40384ef0ad2541fd8c15e8d
+      internalID: -292394927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 959
+        width: 252
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5016213dec7064c6bb5562396517c97e
+      internalID: 831950542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 1311
+        width: 325
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2853f1714d7cb42efa1e249b4b633a2a
+      internalID: -1277391695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 991
+        width: 335
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034e495becc5c43cc814ac85bb37c0b8
+      internalID: -2141897319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 1132
+        width: 273
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906253784a9ab47fd91d9e7e4a68b38c
+      internalID: 219117732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 803
+        width: 193
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d850f9ae859a4d258af20a5ea7d1e40
+      internalID: -1281540591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 525
+        width: 418
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c7ed70905b748baa7702b64dfa5e5d
+      internalID: -404697499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 39
+        width: 104
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca51b81517ccb42ff8bdf3599779731f
+      internalID: 1629938263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 649
+        width: 221
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9176e3ffea6a4ea09ece28737104dba
+      internalID: -2018889850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 2268
+        width: 87
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5216201, y: 0.4999998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f484b3bd27143486f94f755d1e4cf42a
+      internalID: -2083104677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 804
+        width: 404
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c508b114de8d64ee5b03fd7940390f06
+      internalID: -1846012132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 493
+        width: 357
+        height: 293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3233a7ea3e26a42b4a439d9539461e3e
+      internalID: -897998429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 261
+        width: 310
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af49d43af763454299fb85d8c1755f0
+      internalID: 1951548871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 132
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3cb3743ca5c9479697526bc1d1a7f48
+      internalID: -1032236971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 0
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8158b96dfc704e5ab8592b72b5594c0
+      internalID: -1124255138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 1268
+        width: 345
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e08de4f2b874e718bab69dd149ac14
+      internalID: -1723045195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1211
+        width: 187
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115a17a3436454fa9b4a036fa8991038
+      internalID: 2044929014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 870
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e216edbab0d34298a6c06554c5fff3f
+      internalID: -1457253341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 342
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f126be340044eb9a05a86433ca7d38
+      internalID: -1055137092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 348
+        width: 392
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd52693bebc54a82ac0e57f8b22841a
+      internalID: -53984191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 595
+        width: 361
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba91b22b43314cada57ec1b98df62de
+      internalID: -516557670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 554
+        width: 237
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e78a2cb129f443ad853c64d07cdaacc
+      internalID: -1388392144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 26
+        width: 207
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e951b8edd37b4463eb759edf7395f5bd
+      internalID: -1790822534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 301
+        width: 244
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542c4eee4cd214bb990e1a0be8b63396
+      internalID: -1155071562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 536
+        width: 412
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a3308717ecc4567940d6e2113d9688
+      internalID: 1960770433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 284
+        width: 317
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a782747256fed4b3482b2ed1dacc6dd8
+      internalID: 1257583246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 197
+        width: 194
+        height: 273
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886ecb3928c464784adfee1ed96708eb
+      internalID: -1866990957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 40
+        width: 382
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcbedfe3c5c34e858c0120192e33702
+      internalID: 409387719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 235
+        width: 323
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb4ac7d7a7734c68a22c56366475061
+      internalID: -837140972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: States_SpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 25
+        width: 110
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e64cb7bbecce46aca38054394971347
+      internalID: -626349735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9d733f30f1fca4e94a0b451d4fdbdf53
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      States_SpriteSheet_0: -928577395
+      States_SpriteSheet_1: 1292862373
+      States_SpriteSheet_10: 620326755
+      States_SpriteSheet_11: 1399713156
+      States_SpriteSheet_12: -200918331
+      States_SpriteSheet_13: -584583528
+      States_SpriteSheet_14: 891513860
+      States_SpriteSheet_15: -1022329195
+      States_SpriteSheet_16: -1669941718
+      States_SpriteSheet_17: -1363472648
+      States_SpriteSheet_18: 1345406860
+      States_SpriteSheet_19: 583601429
+      States_SpriteSheet_2: 2067049817
+      States_SpriteSheet_20: 1193126721
+      States_SpriteSheet_21: 353693589
+      States_SpriteSheet_22: 1921156359
+      States_SpriteSheet_23: -292394927
+      States_SpriteSheet_24: 831950542
+      States_SpriteSheet_25: -1277391695
+      States_SpriteSheet_26: -2141897319
+      States_SpriteSheet_27: 219117732
+      States_SpriteSheet_28: -1281540591
+      States_SpriteSheet_29: -404697499
+      States_SpriteSheet_3: -1074581913
+      States_SpriteSheet_30: 1629938263
+      States_SpriteSheet_31: -2018889850
+      States_SpriteSheet_32: -2083104677
+      States_SpriteSheet_33: -1846012132
+      States_SpriteSheet_34: -897998429
+      States_SpriteSheet_35: 1951548871
+      States_SpriteSheet_36: -1032236971
+      States_SpriteSheet_37: -1124255138
+      States_SpriteSheet_38: -1723045195
+      States_SpriteSheet_39: 2044929014
+      States_SpriteSheet_4: -1822216630
+      States_SpriteSheet_40: -1457253341
+      States_SpriteSheet_41: -1055137092
+      States_SpriteSheet_42: -53984191
+      States_SpriteSheet_43: -516557670
+      States_SpriteSheet_44: -1388392144
+      States_SpriteSheet_45: -1790822534
+      States_SpriteSheet_46: -1155071562
+      States_SpriteSheet_47: 1960770433
+      States_SpriteSheet_48: 1257583246
+      States_SpriteSheet_49: -1866990957
+      States_SpriteSheet_5: -844332595
+      States_SpriteSheet_50: 409387719
+      States_SpriteSheet_51: -837140972
+      States_SpriteSheet_52: -626349735
+      States_SpriteSheet_6: -132419801
+      States_SpriteSheet_7: 1051485908
+      States_SpriteSheet_8: -1542786307
+      States_SpriteSheet_9: 1799114651
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

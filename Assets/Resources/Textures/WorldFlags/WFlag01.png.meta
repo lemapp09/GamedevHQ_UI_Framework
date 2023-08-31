@@ -1,0 +1,3233 @@
+fileFormatVersion: 2
+guid: 62f06b4b047b241619b321850d34a48f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WFlag01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65472fcfd46e347bf8728157f57da056
+      internalID: 1531366599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4459cf70315e54acf91a21b3ccd8fb47
+      internalID: 1293984536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_2
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4348af66f5541b7b14fe9ec3c1ad1b
+      internalID: 957814206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_3
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4b161a3ab384a4f8e7420aea6587d5
+      internalID: -1694403485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_4
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c509e2e905b51439d89ac830433138b7
+      internalID: -2082543111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_5
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b4ef7d6e055442c3812c6aae1b6e306
+      internalID: -1828557879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_6
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 1639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ab67022ccaa4f87ae13f429ab9116c
+      internalID: 2022731798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_7
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4225596ee9c4357ba57e466734562b
+      internalID: -1957569697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_8
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bea6f509b5a740cab5d349d169ac369
+      internalID: 824275921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_9
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 1639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c291db090b7a54552b9782c727ab6caf
+      internalID: -784248412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c925db74ddd4a438cc477c9806f109
+      internalID: 1653918058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_11
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c29cd0ca4e9f4e9097c925c2633f109
+      internalID: 1322647542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_12
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81d8f0f44bef44158035398acf3e08f
+      internalID: -526065268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_13
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e90ed88da9b46de9be5baf1d4aafc5
+      internalID: 996127378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_14
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea56eeda9559422eb91b6de8d03390f
+      internalID: -466059449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_15
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae402bcd767a74a2b9df47b8afe068e8
+      internalID: 622970600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_16
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 1514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2aeb557342d841b2aa8f3c1f0b55ff3
+      internalID: -1165910772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_17
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0103caa462ce84fe6b03ade4a91112c4
+      internalID: 92533426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_18
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58750e60fedb145d5ae448b1053a6ed4
+      internalID: -1640868345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_19
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 1514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2676933e492824eee95429b19edd0655
+      internalID: -1237310847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068f72702fa2048328dcffb255fa4ebd
+      internalID: -1232840163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_21
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ee4c9923a5a4e64afa5d9b993f9175
+      internalID: 1351922323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_22
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b36a8b7591924b79adb8c02e39a5ccc
+      internalID: 750959098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_23
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0900ccdf4af4821adcf6ec9213eaf0
+      internalID: 412286428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_24
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8343eab811b34999b60e1d9c2df5f74
+      internalID: 1959508803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_25
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed614ac0ea499457d8cff70b1beba8b0
+      internalID: -1403659600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_26
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 1389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b664f9d047f064e229f7fce26b922e3b
+      internalID: 1732398431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_27
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03107bfae48c6475da8b113f338ba7ba
+      internalID: 1157111484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_28
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a28b971933e047a697a7c9bea397a38
+      internalID: 1646704184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_29
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 1389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07367e7613b749e7a34bb041167f9a4
+      internalID: 1635570453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d664d92898d114c40a04c59c8b6731cc
+      internalID: 385339160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_31
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e9ecc0392f645218fc7a9f7ba9c425
+      internalID: -1416140448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_32
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786f53373af2e4c78afacf6ced93ef86
+      internalID: 2009756846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_33
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b524c81b97f1e4b95ab5202881202fc1
+      internalID: -1299258729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_34
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b29f7aa83d74059b68ab3e7dc2c979
+      internalID: 2013779611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_35
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fcbbda7564544d799a9c79dab3def6
+      internalID: 1651755084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_36
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 1264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0721d11f361a2416da66fefe3c322026
+      internalID: 1459574289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_37
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45587cf24c0044e76b690d7d3ed49d0e
+      internalID: -420274339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_38
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1fef45826c24a48879a98c3d1cd6e0
+      internalID: -1777177329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_39
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 1264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c59b2e0de164362b11f51b7e663ed5
+      internalID: -496482259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0abd93ab56cf4cb1b8e6cbb7b47e6ec
+      internalID: 1945010696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_41
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3580fd7100684e859fc9e60556f73e6
+      internalID: -1784765735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_42
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e5ca17b698b47edb6e28af2db0788a
+      internalID: -1848851400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_43
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f01f4e4f212284d2db50490f4fea3e8e
+      internalID: 1496562004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_44
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d913a418a3b4d7aa66283139f51a94
+      internalID: -1973433256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_45
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0e03816eeaf4bf39ddabab76388fe7
+      internalID: -1310917404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_46
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 1139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55ff3da58e824754abe38181ffa1230
+      internalID: -768259847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_47
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6caa8d796764585be52211674d972f
+      internalID: 331854429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_48
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4b05151cd354b2eb3ca81e442bd28e
+      internalID: 1847245826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_49
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 1139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfc2b17e3e4e46c8b30ec5a7223a6b6
+      internalID: 1446409087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1014
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3bfc2fe87f7e49bd9fcf91141851c2a
+      internalID: -1954129766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_51
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1014
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4083a264f222d47178fc8b9d03c00b30
+      internalID: -2110949816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_52
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1014
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b03a5a68adb844b0aaed0afaa3c0847
+      internalID: -1794383081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_53
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1014
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bf26b477da94b8d94f7de2be3f8246
+      internalID: -60932714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_54
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1014
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2145e6ee78a5445278ad4f88a7de5ef2
+      internalID: 699670860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_55
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1014
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8be9384542c447ed824d9b4367fa6ad
+      internalID: 1894011744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_56
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 1014
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b82e8f4317c448979d58a4e3f23ac35
+      internalID: 1189578406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_57
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1014
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f53e657321c4fecb79204fa772771f
+      internalID: -80128131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_58
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1014
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757bfee3ca0ba4f689dbf030c072d6a9
+      internalID: 1683971627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_59
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 1014
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4616898dd8e46e292ebb1db20fef5b
+      internalID: -1586964222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 889
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28c4acaf38894e8db0009fd078231da
+      internalID: 368729337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_61
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 889
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4220b32881c34274853200698d5f54f
+      internalID: 1402198620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_62
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 889
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ad330d5ee3342d9bb495d957ac0ee2
+      internalID: -685121214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_63
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 889
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f868c0a0f26d4ceb98a330aff54eee6
+      internalID: 1512652012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_64
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 889
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5f85736f6f24961aab88dd78afe67d
+      internalID: -160680246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_65
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 889
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803539649208140649a92ab4c197ad5b
+      internalID: -1960649191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_66
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 889
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e82b8ebe3c9c47f3a44feef4168adf4
+      internalID: -1031068033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_67
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 889
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fb938ea2ced4f0aafe91cf2296ae8b
+      internalID: 57741122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_68
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 889
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036ffbbd9ed434b9e8756ab1510d76fd
+      internalID: 1893404634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_69
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 889
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06fd2cba225bc4951bde0d0010482811
+      internalID: 1846583534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 764
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e1793c654b441dfbdd8ceb32ffb680
+      internalID: 519007512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_71
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 764
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b82b67720af452f920bebc1984202b
+      internalID: 807280813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_72
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 764
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74b5f61419bc451da3997a5156e4097
+      internalID: 224236032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_73
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 764
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6c6663cd99b4ec7af54bbfd2a6c2a4
+      internalID: -1144123564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_74
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 764
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276a6b6cd835c414eac7fd8197b606e3
+      internalID: 436612296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_75
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 764
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4d4115dd3554b0ea7ee131b47515de
+      internalID: -276615429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_76
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 764
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801bb3cb1843647d7b5a193dff760c55
+      internalID: -147835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_77
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 764
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa452dde87464dffa1ef99731b5612e
+      internalID: 1401861997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_78
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 764
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513a4d977373f4c2faad1ef455f403ba
+      internalID: 1333802264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_79
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 764
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7a3ca87ddbf428fbe219533c6f0514
+      internalID: -421715393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f284d461a47fc44da8920a38a24a3248
+      internalID: -1019626823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_81
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca442febc41064b73848415ad24a8ecf
+      internalID: 1383971002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_82
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a591fc5c4fc47c98d3c9dcfeb8370d
+      internalID: -619639498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_83
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ce1bef056ca420f9b50ff8bf12eeb5
+      internalID: -23778533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_84
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27341ece29c444fd58f1e6089cf9e87c
+      internalID: -391774320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_85
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b3ba6a10be546598ea535f2544aca4
+      internalID: 1471704372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_86
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b43c799dcad41459ff51389f7a52e8
+      internalID: 98820293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_87
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85bf5b117234146dfafb3cb0a3c367d2
+      internalID: -677960970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_88
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d02ce153913401d9743cb6877187d7
+      internalID: -143080447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_89
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 639
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e14d9be361a4567b19df129b0be246
+      internalID: -976949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d8cbaaa9ab1403184f357040f67605
+      internalID: 383059161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_91
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb8bb2792767449bbd0ca6563e02f31
+      internalID: -332368781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_92
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028dc57875580412483da8c16bae086e
+      internalID: 972377973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_93
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc921f459c4924053aa27e76e7ec65db
+      internalID: -1283186572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_94
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865824c37f33445158bd726b7741feac
+      internalID: -1890896823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_95
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37dc921dcd8464ff69fcb34af40754ef
+      internalID: -1721760886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_96
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b6273d6787a478ca96eae5a7a36562
+      internalID: -776805930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_97
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0042f8640db1a49d4bd9d11fd25f9ae4
+      internalID: -1650730247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_98
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201294adee42242cba44f1ee26e49a06
+      internalID: -1875018399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_99
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 514
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5efd688f0c7094f14ace124f8236eb71
+      internalID: -653573859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e8a008bfd9b4467836d78a1f93daab
+      internalID: -1308918248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_101
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7973c5a0e7c414850b147cc8b76674fa
+      internalID: 1475349782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_102
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7803fe4407948bdba5cfa866d22039
+      internalID: 1318739869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_103
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d79c701b8a4413eb9218d88aa22c20
+      internalID: 302878443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_104
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b484c6770dedc46d595be7e99af9bb5a
+      internalID: 1661482471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_105
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f69c6edec9e44c67a52c89626b88269
+      internalID: 2004469862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_106
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0732db4c008dc4872940399010fddff5
+      internalID: -2103516933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_107
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8ee02409f0a4948ae37af0de57bf63
+      internalID: -1219804989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_108
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7621e2bd6b6b49a1a2b05c0246f5255
+      internalID: 343088276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_109
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 389
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ca63a6c1bfc4fe0a6ec11460ae4dba
+      internalID: 212271342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d625932d5de0848f8b5716d870f632c9
+      internalID: 1360251779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_111
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177c772d55b124944aee83b976cd57c4
+      internalID: -241819237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_112
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acfe6decc00cc4882b6e4e3581c1ae01
+      internalID: 472489836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_113
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fc5435b601a45a7a87e0e5f5924ef2
+      internalID: -1468507443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_114
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb828ce639f3409a9bfd5b80f4564e2
+      internalID: -109484675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_115
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df493378b27b046e18d297c8f2463a35
+      internalID: -2048628128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_116
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bea02ab8fb1c432abcc164a93f044e5
+      internalID: 138256925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_117
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55cbdf652b164d438c24de9f13245e8
+      internalID: -843238970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_118
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8f0d09eaded466c8404187930e7bdc
+      internalID: -347966061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_119
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 264
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4231dabeddce43b096198826a7cfe48
+      internalID: -1592745009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a0c2431fa664dfeb2829a5d70db416
+      internalID: 620143342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_121
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36ab5126714443de97b8836a5ca9095
+      internalID: 1728866412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_122
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c364480e9065d4822942c318ed0e6596
+      internalID: -1801038743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_123
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7ab231df13e478495d28d5830cc95a
+      internalID: 267168252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_124
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83147901c0cb4d3fa00321c46d77a76
+      internalID: -132584070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_125
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929c9265fd3aa49cf841acb4f39a3f63
+      internalID: 301401430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_126
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980e660c8cfd841d59212ea7787c27ae
+      internalID: 1824743579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_127
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c326f03ac2246a8a1d179ca6d5b8d2
+      internalID: -837039617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_128
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06936097c05344c0883d0b4f6cb68618
+      internalID: -1788056030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_129
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 139
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535d51081d7b94525872825302e69c14
+      internalID: -2093214463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 14
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349347dc805f948a88075693593d71e0
+      internalID: -311300550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_131
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 14
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4fb3dfeb40a48c595c2c98c4ccd1e1
+      internalID: 1056627718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_132
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 14
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ede9c58c50554066b6d5fed33d7a948
+      internalID: -1027263206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_133
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 14
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29466d246ca542978014759ea7a02a8
+      internalID: -973251961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_134
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 14
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3af615b47be44cbe898873dc845c27c
+      internalID: -1485146851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_135
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 14
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba76e8300ed134b449854410cbf5e4cb
+      internalID: 615362455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_136
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 14
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c267790ad24964443872956262af8144
+      internalID: 795988320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_137
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 14
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ca013beba9044a7b35e042b49121b6
+      internalID: -1314400104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_138
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 14
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09347fefc6a349a19c168e7c21b226f
+      internalID: 1265104578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WFlag01_139
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 14
+        width: 169
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e4da6d003644e9786312d2693fd262
+      internalID: 1470100979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      WFlag01_0: 1531366599
+      WFlag01_1: 1293984536
+      WFlag01_10: 1653918058
+      WFlag01_100: -1308918248
+      WFlag01_101: 1475349782
+      WFlag01_102: 1318739869
+      WFlag01_103: 302878443
+      WFlag01_104: 1661482471
+      WFlag01_105: 2004469862
+      WFlag01_106: -2103516933
+      WFlag01_107: -1219804989
+      WFlag01_108: 343088276
+      WFlag01_109: 212271342
+      WFlag01_11: 1322647542
+      WFlag01_110: 1360251779
+      WFlag01_111: -241819237
+      WFlag01_112: 472489836
+      WFlag01_113: -1468507443
+      WFlag01_114: -109484675
+      WFlag01_115: -2048628128
+      WFlag01_116: 138256925
+      WFlag01_117: -843238970
+      WFlag01_118: -347966061
+      WFlag01_119: -1592745009
+      WFlag01_12: -526065268
+      WFlag01_120: 620143342
+      WFlag01_121: 1728866412
+      WFlag01_122: -1801038743
+      WFlag01_123: 267168252
+      WFlag01_124: -132584070
+      WFlag01_125: 301401430
+      WFlag01_126: 1824743579
+      WFlag01_127: -837039617
+      WFlag01_128: -1788056030
+      WFlag01_129: -2093214463
+      WFlag01_13: 996127378
+      WFlag01_130: -311300550
+      WFlag01_131: 1056627718
+      WFlag01_132: -1027263206
+      WFlag01_133: -973251961
+      WFlag01_134: -1485146851
+      WFlag01_135: 615362455
+      WFlag01_136: 795988320
+      WFlag01_137: -1314400104
+      WFlag01_138: 1265104578
+      WFlag01_139: 1470100979
+      WFlag01_14: -466059449
+      WFlag01_15: 622970600
+      WFlag01_16: -1165910772
+      WFlag01_17: 92533426
+      WFlag01_18: -1640868345
+      WFlag01_19: -1237310847
+      WFlag01_2: 957814206
+      WFlag01_20: -1232840163
+      WFlag01_21: 1351922323
+      WFlag01_22: 750959098
+      WFlag01_23: 412286428
+      WFlag01_24: 1959508803
+      WFlag01_25: -1403659600
+      WFlag01_26: 1732398431
+      WFlag01_27: 1157111484
+      WFlag01_28: 1646704184
+      WFlag01_29: 1635570453
+      WFlag01_3: -1694403485
+      WFlag01_30: 385339160
+      WFlag01_31: -1416140448
+      WFlag01_32: 2009756846
+      WFlag01_33: -1299258729
+      WFlag01_34: 2013779611
+      WFlag01_35: 1651755084
+      WFlag01_36: 1459574289
+      WFlag01_37: -420274339
+      WFlag01_38: -1777177329
+      WFlag01_39: -496482259
+      WFlag01_4: -2082543111
+      WFlag01_40: 1945010696
+      WFlag01_41: -1784765735
+      WFlag01_42: -1848851400
+      WFlag01_43: 1496562004
+      WFlag01_44: -1973433256
+      WFlag01_45: -1310917404
+      WFlag01_46: -768259847
+      WFlag01_47: 331854429
+      WFlag01_48: 1847245826
+      WFlag01_49: 1446409087
+      WFlag01_5: -1828557879
+      WFlag01_50: -1954129766
+      WFlag01_51: -2110949816
+      WFlag01_52: -1794383081
+      WFlag01_53: -60932714
+      WFlag01_54: 699670860
+      WFlag01_55: 1894011744
+      WFlag01_56: 1189578406
+      WFlag01_57: -80128131
+      WFlag01_58: 1683971627
+      WFlag01_59: -1586964222
+      WFlag01_6: 2022731798
+      WFlag01_60: 368729337
+      WFlag01_61: 1402198620
+      WFlag01_62: -685121214
+      WFlag01_63: 1512652012
+      WFlag01_64: -160680246
+      WFlag01_65: -1960649191
+      WFlag01_66: -1031068033
+      WFlag01_67: 57741122
+      WFlag01_68: 1893404634
+      WFlag01_69: 1846583534
+      WFlag01_7: -1957569697
+      WFlag01_70: 519007512
+      WFlag01_71: 807280813
+      WFlag01_72: 224236032
+      WFlag01_73: -1144123564
+      WFlag01_74: 436612296
+      WFlag01_75: -276615429
+      WFlag01_76: -147835
+      WFlag01_77: 1401861997
+      WFlag01_78: 1333802264
+      WFlag01_79: -421715393
+      WFlag01_8: 824275921
+      WFlag01_80: -1019626823
+      WFlag01_81: 1383971002
+      WFlag01_82: -619639498
+      WFlag01_83: -23778533
+      WFlag01_84: -391774320
+      WFlag01_85: 1471704372
+      WFlag01_86: 98820293
+      WFlag01_87: -677960970
+      WFlag01_88: -143080447
+      WFlag01_89: -976949
+      WFlag01_9: -784248412
+      WFlag01_90: 383059161
+      WFlag01_91: -332368781
+      WFlag01_92: 972377973
+      WFlag01_93: -1283186572
+      WFlag01_94: -1890896823
+      WFlag01_95: -1721760886
+      WFlag01_96: -776805930
+      WFlag01_97: -1650730247
+      WFlag01_98: -1875018399
+      WFlag01_99: -653573859
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

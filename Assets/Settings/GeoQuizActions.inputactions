@@ -1,0 +1,56 @@
+{
+    "name": "GeoQuizActions",
+    "maps": [
+        {
+            "name": "Screen",
+            "id": "3f1a7dec-9c3e-4625-b300-21d094d9f620",
+            "actions": [
+                {
+                    "name": "Capture",
+                    "type": "Button",
+                    "id": "dc3968b9-6560-4269-80af-198c52e8fd4a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "One Modifier",
+                    "id": "7dac8015-6e5a-4efa-819f-77acf10a5d7f",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Capture",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "398cbbd1-7c4b-402c-8c94-1b4ecb8fa1e6",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Capture",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "8527cdbb-1023-403a-a72c-c793280401c4",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Capture",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

@@ -1,8 +1,8 @@
-using System;
 using UnityEngine;
 using UnityEngine.Audio;
 
-public class AudioManager : MonoBehaviour {
+public class AudioManager : MonoSingleton<AudioManager>
+{
     [SerializeField] private AudioClip[] _soundClips;
     [SerializeField] private AudioSource[] _audioSources;
     [SerializeField] private AudioMixer _mixer;
@@ -17,5 +17,10 @@ public class AudioManager : MonoBehaviour {
         _audioSources[0].Play();
      // "SFXVolume"
         _mixer.SetFloat("SFXVolume", 0f);
+    }
+
+    public void PlayClick()
+    {
+        _audioSources[1].Play();
     }
 }
