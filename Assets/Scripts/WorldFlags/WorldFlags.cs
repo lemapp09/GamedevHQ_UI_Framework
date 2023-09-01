@@ -26,7 +26,7 @@ namespace LemApperson.WorldFlags
             displayOrder = new int[36];
             LoadSpriteSheets();
             PopulateFlagList();
-            allContinentFlags = ReturnListByType(_continentCode);
+            allContinentFlags = ReturnListByContinent(_continentCode);
             GenerateRandomList();
             GenerateListTiles();
             PopulateGridWithFlagTiles();
@@ -99,7 +99,7 @@ namespace LemApperson.WorldFlags
             }
         }
 
-        public List<int> ReturnListByType(int continentCode) {
+        public List<int> ReturnListByContinent(int continentCode) {
             List<int> temp = new List<int>();
             for (int i = 0; i < _worldFlags.Count; i++) {
                 // Contry Code, Country Name, Continent Code, Sprite Sheet Number, Sprite Number
