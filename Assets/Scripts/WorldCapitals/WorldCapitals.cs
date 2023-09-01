@@ -51,9 +51,10 @@ namespace LemApperson.WorldCapitals
                 (int spriteSheet, int SpriteNumber) = ReturnSpriteFileInfo(_countryList[i]);
                 GameObject temp = Instantiate(_countryTilePrefab, _columnA.transform.position, Quaternion.identity, _columnA.transform);
                 CountryTile tempCountryTile = temp.GetComponent<CountryTile>();
-                // (int countryIndex, string countryName,Sprite sprite, Color dotColor)
-                tempCountryTile.SetCountryData(_countryList[i], ReturnCountry(_countryList[i]),
+                // (int countryIndex, int tileIndex ,tring countryName,Sprite sprite, Color dotColor)
+                tempCountryTile.SetCountryData(_countryList[i], i ,ReturnCountry(_countryList[i]),
                     GetSpriteFromSpriteSheet(_countryList[i] , spriteSheet, SpriteNumber), _colors[i]);
+                tempCountryTile.name = "CountrtyTile" + i.ToString();
             }
         }
 

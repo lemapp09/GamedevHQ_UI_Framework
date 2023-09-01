@@ -12,13 +12,14 @@ namespace LemApperson.WorldCapitals
         [SerializeField] private TextMeshProUGUI _countryNameText;
         private Sprite _countrySprite;
         private string _countryName;
-        private int _countryIndex;
+        private int _countryIndex, _tileIndex;
         private Color _dotColor;
 
-        public void SetCountryData(int countryIndex, string countryName,Sprite sprite, Color dotColor)
+        public void SetCountryData(int countryIndex, int tileIndex, string countryName,Sprite sprite, Color dotColor)
         {
             _countryIndex = countryIndex;
-            _draggableDot.SetData(countryIndex, dotColor);
+            _tileIndex = tileIndex;
+            _draggableDot.SetData(countryIndex, tileIndex, dotColor);
             _countryName = countryName;
             _countryNameText.text = countryName;
             _countrySprite = sprite;

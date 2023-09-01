@@ -1,8 +1,8 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.UI.Extensions;
 using Random = UnityEngine.Random;
 
 namespace LemApperson.WorldCapitals
@@ -10,11 +10,12 @@ namespace LemApperson.WorldCapitals
     [RequireComponent(typeof(LineRenderer))]
     public class DraggableDot : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
     {
-        private int _countryIndex;
+        private int _countryIndex, _tileIndex;
         [SerializeField] private Image _image;
         [SerializeField] private  GameObject _parentDot;
         [SerializeField] private LineRenderer _lineRenderer;
-        private bool _reachedStateSlot , _isWiggling;
+        [SerializeField] private UnityEngine.UI.Extensions.UILineRenderer _uiLineRenderer;
+        private bool _reachedCapitalSlot , _isWiggling;
 
         void Start()
         {
@@ -25,16 +26,20 @@ namespace LemApperson.WorldCapitals
 
         private void Update()
         {
-             _lineRenderer.SetPosition(0, _parentDot.transform.position);
-             _lineRenderer.SetPosition(2, transform.position);
+            Vector2 point1 = new Vector2(0, 0);
+            Vector2 point2 = new Vector2((transform.position.x - _parentDot.transform.position.x) * -1,
+                (transform.position.y - _parentDot.transform.position.y) * -1);
+            Vector2[] line = { point1, point2 };
+            _uiLineRenderer.Points = line;
         }
 
-        public void SetData(int countryIndex, Color dotColor)
+        public void SetData(int countryIndex, int _tileIndex, Color dotColor)
         {
             _countryIndex = countryIndex;
             _image.color = dotColor;
             _lineRenderer.startColor = dotColor;
             _lineRenderer.endColor = dotColor;
+            _uiLineRenderer.color = dotColor;
         }
         
         public void OnDrag(PointerEventData eventData)
@@ -48,7 +53,7 @@ namespace LemApperson.WorldCapitals
             temp.a = 1.0f;
             _image.color = temp;
             _image.raycastTarget = true;
-            if (!_reachedStateSlot)
+            if (!_reachedCapitalSlot)
             {
                 transform.position = _parentDot.transform.position;
                 _isWiggling = true;
@@ -62,6 +67,11 @@ namespace LemApperson.WorldCapitals
             _image.color = temp;
             _image.raycastTarget = false;
             _isWiggling = false;
+        }
+
+        public void ReachedCapital(bool reached)
+        {
+            _reachedCapitalSlot = true;
         }
 
         private IEnumerator Wiggling()
