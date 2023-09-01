@@ -1,4 +1,5 @@
 using System;
+using MyNamespace;
 using UnityEngine;
 using TMPro;
 
@@ -9,8 +10,11 @@ namespace LemApperson.StateMaps
     public class Score : MonoBehaviour
     {
         [SerializeField] private GameObject _gameOverDisplay;
+        [Tooltip("The number of the game this score represents. This is used to determine which game is won.")]
+        [Range(1, 11)]
+        [SerializeField] private int _gameNumber;
         private TextMeshProUGUI _scoreText;
-        private int _score;
+        private int _score, _flagCount;
         private float _lengthOfPlay = 0;
         private float _startTime;
 
@@ -20,14 +24,29 @@ namespace LemApperson.StateMaps
             _startTime = Time.time;
         }
 
-        public void UpdateScore(string state)
+        public void UpdateStateScore(string state)
         {
             string fullStateName = LookupState(state);
             _score++;
             _scoreText.text = "Score: " + _score.ToString() + " : " + fullStateName;
             if (_score == 10) {
                 _lengthOfPlay = Time.time - _startTime;
+                AudioManager.Instance.PlayWin();
                 GameManager.Instance.GameWon(1, _score, _lengthOfPlay);
+                _gameOverDisplay.SetActive(true);
+            }
+        }
+
+        public void UpdateFlagScore(int score)
+        {
+            if (score > 0) {
+                _flagCount++;
+            }
+            _score += score;
+            _scoreText.text = "Score: " + _score.ToString() + " : " ;
+            if (_flagCount == 18) {
+                _lengthOfPlay = Time.time - _startTime;
+                GameManager.Instance.GameWon(_gameNumber, _score, _lengthOfPlay);
                 _gameOverDisplay.SetActive(true);
             }
         }

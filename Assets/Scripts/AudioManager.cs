@@ -23,4 +23,13 @@ public class AudioManager : MonoSingleton<AudioManager>
     {
         _audioSources[1].Play();
     }
+
+    public void PlayLose()
+    {
+        _audioSources[2].Play();
+    }
+
+    public void PlayWin() {
+        _audioSources[3].Play();
+    }
 }

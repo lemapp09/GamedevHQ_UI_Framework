@@ -14,6 +14,7 @@ public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T
     }
 
     public void Awake() {
+        DontDestroyOnLoad(gameObject);
         _instance = this as T;
         // Cast as T
         // _instance = (T)this;

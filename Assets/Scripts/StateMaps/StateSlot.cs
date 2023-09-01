@@ -21,7 +21,7 @@ namespace LemApperson.StateMaps
             if(stateName == _stateName) {
                 eventData.pointerDrag.transform.position = transform.position;
                 eventData.pointerDrag.GetComponent<StatePiece>()._reachedStateSlot = true;
-                _score.UpdateScore(_stateName);
+                _score.UpdateStateScore(_stateName);
                 AudioManager.Instance.PlayClick();
             }
         }

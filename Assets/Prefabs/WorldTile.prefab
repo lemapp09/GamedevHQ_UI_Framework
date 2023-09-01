@@ -91,6 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flagImage: {fileID: 1821860964319388117}
+  _coverImage: {fileID: 5043266036675493140}
   _countryName: 
   _spriteSheetNumber: 0
   _spriteNumber: 0
@@ -140,10 +141,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3068422040972268425}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 836202767520822821}
+        m_TargetAssemblyTypeName: LemApperson.WorldFlags.WorldFlagTiles, Assembly-CSharp
+        m_MethodName: TileSelected
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

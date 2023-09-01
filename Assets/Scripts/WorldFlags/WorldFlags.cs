@@ -1,31 +1,68 @@
-using System;
 using System.Collections.Generic;
+using LemApperson.StateMaps;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace LemApperson.WorldFlags
 {
-    public class WorldFlags : MonoBehaviour
+    public class WorldFlags : MonoSingleton<WorldFlags>
     {
         // Need a variable of <int, string, string, string>
         private List<(int, string, int, int, int)> _worldFlags = new List<(int, string, int, int, int)>();
         [SerializeField] private GameObject _prefabWFTile;
+        [SerializeField] private Score _flagScore;
         [Tooltip("The continent Code assigned to each continent")]
         [Range(0,5)]
         [SerializeField] private int _continentCode = 0;
         private int[] displayOrder, tileOrder;
         private List<int> allContinentFlags;
-        private Sprite[] spriteSheetSprite01, spriteSheetSprite02;
+        private Sprite[] spriteSheet, spriteSheetSprite02;
+        private WorldFlagTiles _tileGO1, _tileGO2;
+        public int _currentGameScore, _currentFlagIndex, _score;
+        private bool _isFirstTile;
+        private float _lengthOfplay;
 
         private void Start() {
+            displayOrder = new int[36];
             LoadSpriteSheets();
             PopulateFlagList();
-            PopulateGridWithFlagTiles();
             allContinentFlags = ReturnListByType(_continentCode);
             GenerateRandomList();
             GenerateListTiles();
             PopulateGridWithFlagTiles();
+        }
 
+        public void FlagTileSelected(int keyIndex, WorldFlagTiles tileGO)
+        {
+            if (!_isFirstTile) {
+                _isFirstTile = true;
+                _currentFlagIndex = keyIndex;
+                _tileGO1 = tileGO;
+            } else {
+                Debug.Log("Tile1: " + _currentFlagIndex + " , Tile2: " + keyIndex);
+                _isFirstTile = false;
+                _tileGO2 = tileGO;
+                if (keyIndex == _currentFlagIndex) {
+                    Debug.Log("Tiles Matched");
+                    TilesMatch();
+                }  else  {
+                    Debug.Log("Tiles Didn't Matched");
+                    TilesDidntMatch();
+                }
+            }
+        }
+
+        private void TilesMatch()
+        {
+            _flagScore.UpdateFlagScore(10);
+            _tileGO1.TilesMatched();
+            _tileGO2.TilesMatched();
+
+        }
+        private void TilesDidntMatch() {
+            _flagScore.UpdateFlagScore(0);
+            _tileGO1.TilesDidntMatch();
+            _tileGO2.TilesDidntMatch();
         }
 
         private void GenerateRandomList() {
@@ -45,7 +82,6 @@ namespace LemApperson.WorldFlags
         }
 
         private void GenerateListTiles() {
-            displayOrder = new int[36];
             for (int i = 0; i < 36; i += 2) {
                 int randomFlagIIndex = Random.Range(0, allContinentFlags.Count);
                 displayOrder[tileOrder[i]] = allContinentFlags[ randomFlagIIndex];
@@ -58,7 +94,7 @@ namespace LemApperson.WorldFlags
                 GameObject holderObject = Instantiate(_prefabWFTile, this.transform.position, Quaternion.identity );
                 holderObject.transform.SetParent(this.transform);
                 var _tempTile = holderObject.GetComponent<WorldFlagTiles>();
-                (int _tempSheetNumber ,  int _tempSpriteNumber ) = ReturnSpriteFileName(displayOrder[i]);
+                (int _tempSheetNumber ,  int _tempSpriteNumber ) = ReturnSpriteFileInfo(displayOrder[i]);
                 _tempTile.SetUp(ReturnCountryName(displayOrder[i]), 
                     _tempSheetNumber, _tempSpriteNumber, displayOrder[i]);
                 holderObject.name = "FlagTile" + i;
@@ -88,7 +124,7 @@ namespace LemApperson.WorldFlags
             return "";
         }
         
-        public (int, int) ReturnSpriteFileName(int indexNumber) { 
+        public (int, int) ReturnSpriteFileInfo(int indexNumber) { 
             for (int i = 0; i < _worldFlags.Count; i++) {
                 (int firstInt, string firstString1, int firstInt2, int firstInt3,int firstInt4) = _worldFlags[i];
                 if (firstInt == indexNumber) {
@@ -99,17 +135,17 @@ namespace LemApperson.WorldFlags
         }
 
         public void LoadSpriteSheets(){
-            spriteSheetSprite01 = Resources.LoadAll<Sprite>("Textures/WorldFlags");  
+            spriteSheet = Resources.LoadAll<Sprite>("Textures/WorldFlags");  
         }
 
         public Sprite GetSpriteFromSpriteSheet(int countryCode,  int spriteSheetIndex, int spriteIndex)
         {
             if (spriteSheetIndex == 0) {
-                return spriteSheetSprite01[0];
+                return spriteSheet[0];
             } else  if (spriteSheetIndex == 1) {
-                return spriteSheetSprite01[spriteIndex];
+                return spriteSheet[spriteIndex];
             } else  {
-                return spriteSheetSprite01[spriteIndex + 140];
+                return spriteSheet[spriteIndex + 140];
             }
         }
 

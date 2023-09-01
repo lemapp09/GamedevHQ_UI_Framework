@@ -72,6 +72,34 @@ public partial class @GeoQuizActions: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 }
             ]
+        },
+        {
+            ""name"": ""Settings"",
+            ""id"": ""55a058fa-3953-4319-861d-67b86b846623"",
+            ""actions"": [
+                {
+                    ""name"": ""Toggle"",
+                    ""type"": ""Button"",
+                    ""id"": ""3e37ee23-9358-4b23-afb3-c6fb026baf3f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""f7f0a886-9524-4813-b545-121110c2a117"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Toggle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -79,6 +107,9 @@ public partial class @GeoQuizActions: IInputActionCollection2, IDisposable
         // Screen
         m_Screen = asset.FindActionMap("Screen", throwIfNotFound: true);
         m_Screen_Capture = m_Screen.FindAction("Capture", throwIfNotFound: true);
+        // Settings
+        m_Settings = asset.FindActionMap("Settings", throwIfNotFound: true);
+        m_Settings_Toggle = m_Settings.FindAction("Toggle", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -182,8 +213,58 @@ public partial class @GeoQuizActions: IInputActionCollection2, IDisposable
         }
     }
     public ScreenActions @Screen => new ScreenActions(this);
+
+    // Settings
+    private readonly InputActionMap m_Settings;
+    private List<ISettingsActions> m_SettingsActionsCallbackInterfaces = new List<ISettingsActions>();
+    private readonly InputAction m_Settings_Toggle;
+    public struct SettingsActions
+    {
+        private @GeoQuizActions m_Wrapper;
+        public SettingsActions(@GeoQuizActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Toggle => m_Wrapper.m_Settings_Toggle;
+        public InputActionMap Get() { return m_Wrapper.m_Settings; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(SettingsActions set) { return set.Get(); }
+        public void AddCallbacks(ISettingsActions instance)
+        {
+            if (instance == null || m_Wrapper.m_SettingsActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_SettingsActionsCallbackInterfaces.Add(instance);
+            @Toggle.started += instance.OnToggle;
+            @Toggle.performed += instance.OnToggle;
+            @Toggle.canceled += instance.OnToggle;
+        }
+
+        private void UnregisterCallbacks(ISettingsActions instance)
+        {
+            @Toggle.started -= instance.OnToggle;
+            @Toggle.performed -= instance.OnToggle;
+            @Toggle.canceled -= instance.OnToggle;
+        }
+
+        public void RemoveCallbacks(ISettingsActions instance)
+        {
+            if (m_Wrapper.m_SettingsActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(ISettingsActions instance)
+        {
+            foreach (var item in m_Wrapper.m_SettingsActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_SettingsActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public SettingsActions @Settings => new SettingsActions(this);
     public interface IScreenActions
     {
         void OnCapture(InputAction.CallbackContext context);
+    }
+    public interface ISettingsActions
+    {
+        void OnToggle(InputAction.CallbackContext context);
     }
 }
