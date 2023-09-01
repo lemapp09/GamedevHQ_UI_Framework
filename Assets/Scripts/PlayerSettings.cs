@@ -1,4 +1,3 @@
-using System;
 using MyNamespace;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -16,7 +15,8 @@ namespace LemApperson
         [SerializeField] private Slider _effectsSlider;
         [SerializeField] private AudioMixer _mixer;
         [SerializeField] private GameObject _scores_Grid;
-        [SerializeField] private GeoQuizActions _toggleSettings;
+        [SerializeField] private GameObject _prefabTile;
+        private GeoQuizActions _toggleSettings;
         private bool _screenVisible;
 
         private void Start()
@@ -25,19 +25,19 @@ namespace LemApperson
             _toggleSettings.Settings.Enable();
             _toggleSettings.Settings.Toggle.performed += ctx => ToggleSettings();
             GetVolumes();
+            PopulateGrid();
         }
 
         private void PopulateGrid()
         {
             int numberOfGames = GameManager.Instance.NumberOfGames;
-            for (int i = 0; i < numberOfGames; i++)
+            for (int i = 1; i < numberOfGames; i++)
             {
                 int gamesplayed = GameManager.Instance.GetNumberOfGamesPlayed(i);
                 if (gamesplayed > 0) {
-                    GameObject newGameTile = Instantiate(_scores_Grid, _scores_Grid.transform.parent);
-                    newGameTile.GetComponent<SettingsTile>().SetTitle(GetGameName(i));
-                    newGameTile.GetComponent<SettingsTile>().SetAverage(GameManager.Instance.GetAverage(i));
-                    newGameTile.GetComponent<SettingsTile>().SetNumGamesPlayed(gamesplayed);
+                    GameObject newGameTile = Instantiate(_prefabTile, _scores_Grid.transform.position, Quaternion.identity, _scores_Grid.transform);
+                    SettingsTile tile = newGameTile.GetComponent<SettingsTile>();
+                    tile.SetData(gamesplayed,GetGameName(i),GameManager.Instance.GetAverage(i)); 
                 }
             }
         }
@@ -84,20 +84,23 @@ namespace LemApperson
             _playerNameInput.text = GameManager.Instance.GetPlayerName();
         }
 
-        public void GetVolumes() {
-            float temp;
-            _mixer.GetFloat("MasterVolume", out temp);
-            _volumeSlider.value = temp;
-            _mixer.GetFloat("AmbientVolume", out temp);
-            _ambienceSlider.value = temp;
-            _mixer.GetFloat("SFXVolume", out temp);
-            _effectsSlider.value = temp;
+        public void GetVolumes()
+        {
+            (float mVol, float aVol, float eVol) = GameManager.Instance.GetVolumes();
+            _mixer.SetFloat("MasterVolume", mVol);
+            _volumeSlider.value = mVol;
+            _mixer.SetFloat("AmbientVolume", aVol);
+            _ambienceSlider.value = aVol;
+            _mixer.SetFloat("SFXVolume", eVol);
+            _effectsSlider.value = eVol;
         }
+
 
         public void ChangeVolume() {
             _mixer.SetFloat("MasterVolume", _volumeSlider.value);
             _mixer.SetFloat("AmbientVolume", _ambienceSlider.value);
             _mixer.SetFloat("SFXVolume", _effectsSlider.value);
+            GameManager.Instance.SetVolumes(_volumeSlider.value, _ambienceSlider.value, _effectsSlider.value);
         }
         
         public void SetPlayerName(){

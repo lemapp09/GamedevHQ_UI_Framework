@@ -7,17 +7,10 @@ public class SettingsTile : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _average;
     [SerializeField] private TextMeshProUGUI _numberPlayed;
 
-
-    public void SetTitle(string title) {
-        _title.text = title;
+    public void SetData(int numGamesplayed, string setGameName, float setAverage)
+    {
+        _title.text = setGameName;
+        _average.text = "Avg: " + setAverage.ToString("F2");
+        _numberPlayed.text = "Games Played: " + numGamesplayed.ToString();
     }
-
-    public void SetAverage(float average){
-        _average.text = "Avg: " + average.ToString("F2");
-    }    
-    
-    public void SetNumGamesPlayed(int numGamesPlayed){
-        _title.text = "Games Played: " + numGamesPlayed.ToString();
-    }
-
 }

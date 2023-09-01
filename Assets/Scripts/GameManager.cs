@@ -2,8 +2,7 @@ using UnityEngine;
 
 namespace MyNamespace
 {
-
-
+    
     public class GameManager : MonoSingleton<GameManager>
     {
         #region PlayerPrefsVariables
@@ -13,6 +12,7 @@ namespace MyNamespace
         private string _playerName = "";
         private float[] _rScr, _avgScr;
         private int[] _numPly;
+        private float _masterVolume, _ambienceVolume, _sfxVolume;
         private int _numberOfGames;
         public int NumberOfGames { get { return _numberOfGames; } }
 
@@ -33,14 +33,12 @@ namespace MyNamespace
             _screenCaptureInputs.Screen.Enable();
             _screenCaptureInputs.Screen.Capture.performed += ctx => ScreenCapture01();
         }
-
-
+        
         public void ScreenCapture01()
         {
             ScreenCapture.CaptureScreenshot("Screenshot" + Time.time.ToString() + ".png");
             Debug.Log("Screenshot Captured");
         }
-
 
         public void SetRecentScore(int gameNumber, float score)
         {
@@ -55,6 +53,18 @@ namespace MyNamespace
         private float FindAverage(float score, float recentScore, int numberOfTimesPlayed)
         {
             return ((recentScore * numberOfTimesPlayed) + score) / (numberOfTimesPlayed + 1);
+        }
+
+        public float GetRecentScore(int gameNumber)
+        {
+            if (gameNumber <= _numberOfGames)
+            {
+                return _rScr[gameNumber];
+            }
+            else
+            {
+                return 0;
+            }
         }
 
         public float GetAverage(int gameNumber)
@@ -92,18 +102,43 @@ namespace MyNamespace
             return _playerName;
         }
 
+        public void SetVolumes(float mVol, float aVol, float eVol)
+        {
+            _masterVolume = mVol;
+            _ambienceVolume = aVol;
+            _sfxVolume = eVol;
+        }
+
+        public (float, float, float) GetVolumes()
+        {
+            _masterVolume = PlayerPrefs.GetFloat("mVol");
+            _ambienceVolume = PlayerPrefs.GetFloat("aVol");
+            _sfxVolume = PlayerPrefs.GetFloat("eVol");
+            return (_masterVolume, _ambienceVolume, _sfxVolume);
+        }
+
         public void GameWon(int gameNumber, int score, float lengthOfPlay)
         {
-            if (lengthOfPlay >= 30.0f)
+            if (lengthOfPlay >= 60.0f)
             {
-                _rScr[gameNumber] = score - (lengthOfPlay % 30.0f);
+                _rScr[gameNumber] = score * 0.95f ;
             }
             else
             {
-                _rScr[gameNumber] = score + (lengthOfPlay % 5.0f);
+                _rScr[gameNumber] = score ;
             }
 
             SetRecentScore(gameNumber, _rScr[gameNumber]);
+            SaveToPlayerPref();
+        }
+
+        public void ResetPlayerPrefs()
+        {
+            for (int i = 1; i < 12; i++)
+            {
+                _rScr[i] = _avgScr[i] = _numPly[i] = 0;
+            }
+            SaveToPlayerPref();
         }
 
         #region PlayerPrefMethods
@@ -144,6 +179,9 @@ namespace MyNamespace
             PlayerPrefs.SetInt("numPly10", _numPly[10]);
             PlayerPrefs.SetInt("numPly11", _numPly[11]);
             PlayerPrefs.SetString("PlyrNm", _playerName);
+            PlayerPrefs.SetFloat("mVol", _masterVolume);
+            PlayerPrefs.SetFloat("aVol", _ambienceVolume);
+            PlayerPrefs.SetFloat("eVol", _sfxVolume);
         }
 
         public void GetFromPlayerPref()
@@ -182,6 +220,9 @@ namespace MyNamespace
             _numPly[10] = PlayerPrefs.GetInt("numPly10");
             _numPly[11] = PlayerPrefs.GetInt("numPly11");
             _playerName = PlayerPrefs.GetString("PlyrNm");
+            _masterVolume = PlayerPrefs.GetFloat("mVol");
+            _ambienceVolume = PlayerPrefs.GetFloat("aVol");
+            _sfxVolume = PlayerPrefs.GetFloat("eVol");
         }
 
         #endregion

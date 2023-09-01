@@ -39,14 +39,11 @@ namespace LemApperson.WorldFlags
                 _currentFlagIndex = keyIndex;
                 _tileGO1 = tileGO;
             } else {
-                Debug.Log("Tile1: " + _currentFlagIndex + " , Tile2: " + keyIndex);
                 _isFirstTile = false;
                 _tileGO2 = tileGO;
                 if (keyIndex == _currentFlagIndex) {
-                    Debug.Log("Tiles Matched");
                     TilesMatch();
                 }  else  {
-                    Debug.Log("Tiles Didn't Matched");
                     TilesDidntMatch();
                 }
             }
