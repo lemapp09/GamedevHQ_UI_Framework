@@ -7,15 +7,14 @@ using Random = UnityEngine.Random;
 
 namespace LemApperson.WorldCapitals
 {
-    [RequireComponent(typeof(LineRenderer))]
+    
     public class DraggableDot : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
     {
-        private int _countryIndex, _tileIndex;
+        [SerializeField] private int _countryIndex, _tileIndex;
         [SerializeField] private Image _image;
         [SerializeField] private  GameObject _parentDot;
-        [SerializeField] private LineRenderer _lineRenderer;
         [SerializeField] private UnityEngine.UI.Extensions.UILineRenderer _uiLineRenderer;
-        private bool _reachedCapitalSlot , _isWiggling;
+        [SerializeField] private bool _reachedCapitalSlot , _isWiggling;
 
         void Start()
         {
@@ -27,8 +26,8 @@ namespace LemApperson.WorldCapitals
         private void Update()
         {
             Vector2 point1 = new Vector2(0, 0);
-            Vector2 point2 = new Vector2((transform.position.x - _parentDot.transform.position.x) * -1,
-                (transform.position.y - _parentDot.transform.position.y) * -1);
+            Vector2 point2 = new Vector2(transform.position.x - _parentDot.transform.position.x,
+                transform.position.y - _parentDot.transform.position.y);
             Vector2[] line = { point1, point2 };
             _uiLineRenderer.Points = line;
         }
@@ -37,8 +36,6 @@ namespace LemApperson.WorldCapitals
         {
             _countryIndex = countryIndex;
             _image.color = dotColor;
-            _lineRenderer.startColor = dotColor;
-            _lineRenderer.endColor = dotColor;
             _uiLineRenderer.color = dotColor;
         }
         
@@ -74,6 +71,11 @@ namespace LemApperson.WorldCapitals
             _reachedCapitalSlot = true;
         }
 
+        public int GetCountryIndex()
+        {
+            return _countryIndex;
+        }
+        
         private IEnumerator Wiggling()
         {
             while(_isWiggling) {

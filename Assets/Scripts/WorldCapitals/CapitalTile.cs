@@ -15,10 +15,11 @@ namespace LemApperson.WorldCapitals
 
 
         public void SetCapitalData(string capitalName, int countryIndex, Color dotColor)
-        {
+        {    
             _capitalName = capitalName;
             _capitalNameText.text = capitalName;
             _countryIndex = countryIndex;
+            _dot.GetComponent<CapitalDots>().SetCountryID(countryIndex);
             _dotColor = dotColor;
             _dot.color = dotColor;
         }

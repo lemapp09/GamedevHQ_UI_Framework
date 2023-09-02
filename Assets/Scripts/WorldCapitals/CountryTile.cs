@@ -10,10 +10,10 @@ namespace LemApperson.WorldCapitals
         [SerializeField] private DraggableDot _draggableDot;
         [SerializeField] private Image _flagImage;
         [SerializeField] private TextMeshProUGUI _countryNameText;
-        private Sprite _countrySprite;
-        private string _countryName;
-        private int _countryIndex, _tileIndex;
-        private Color _dotColor;
+        [SerializeField] private Sprite _countrySprite;
+        [SerializeField] private string _countryName;
+        [SerializeField] private int _countryIndex, _tileIndex;
+        [SerializeField] private Color _dotColor;
 
         public void SetCountryData(int countryIndex, int tileIndex, string countryName,Sprite sprite, Color dotColor)
         {

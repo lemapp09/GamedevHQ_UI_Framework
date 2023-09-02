@@ -6,23 +6,21 @@ namespace MyNamespace
     public class GameManager : MonoSingleton<GameManager>
     {
         #region PlayerPrefsVariables
-
-        // Player Settings for 3 games : recent score, average, number of times played
-        // PlayerPref does not support arrays
-        private string _playerName = "";
-        private float[] _rScr, _avgScr;
-        private int[] _numPly;
-        private float _masterVolume, _ambienceVolume, _sfxVolume;
-        private int _numberOfGames;
-        public int NumberOfGames { get { return _numberOfGames; } }
-
+            // Player Settings for 3 games : recent score, average, number of times played
+            // PlayerPref does not support arrays
+            private string _playerName = "";
+            private float[] _rScr, _avgScr;
+            private int[] _numPly;
+            private float _masterVolume, _ambienceVolume, _sfxVolume;
+            private int _numberOfGames;
+            public int NumberOfGames { get { return _numberOfGames; } }
         #endregion
 
         private GeoQuizActions _screenCaptureInputs;
 
         private void Start()
         {
-            _numberOfGames = 12;
+            _numberOfGames = 18;
             _rScr = new float[_numberOfGames];
             _avgScr = new float[_numberOfGames];
             _numPly = new int[_numberOfGames];
@@ -53,6 +51,27 @@ namespace MyNamespace
         private float FindAverage(float score, float recentScore, int numberOfTimesPlayed)
         {
             return ((recentScore * numberOfTimesPlayed) + score) / (numberOfTimesPlayed + 1);
+        }
+
+        public float OverAllAverage()
+        {
+                float sum = 0;
+                int numOfGamesPlayed = 0;
+            for (int i = 0; i < _numberOfGames; i++)
+            {
+                sum += _avgScr[i];
+                if (_avgScr[i] > 0) numOfGamesPlayed ++;
+            }
+            return sum / numOfGamesPlayed;
+        }
+
+        public int TotalNumberOfGamesPlayed()
+        {
+            int sum = 0;
+            for (int i = 0; i < _numberOfGames; i++) {
+                sum += _numPly[i];
+            }
+            return sum;
         }
 
         public float GetRecentScore(int gameNumber)
@@ -134,7 +153,7 @@ namespace MyNamespace
 
         public void ResetPlayerPrefs()
         {
-            for (int i = 1; i < 12; i++)
+            for (int i = 1; i < _numberOfGames; i++)
             {
                 _rScr[i] = _avgScr[i] = _numPly[i] = 0;
             }
@@ -156,6 +175,12 @@ namespace MyNamespace
             PlayerPrefs.SetFloat("rScr9", _rScr[9]);
             PlayerPrefs.SetFloat("rScr10", _rScr[10]);
             PlayerPrefs.SetFloat("rScr11", _rScr[11]);
+            PlayerPrefs.SetFloat("rScr12", _rScr[12]);
+            PlayerPrefs.SetFloat("rScr13", _rScr[13]);
+            PlayerPrefs.SetFloat("rScr14", _rScr[14]);
+            PlayerPrefs.SetFloat("rScr15", _rScr[15]);
+            PlayerPrefs.SetFloat("rScr16", _rScr[16]);
+            PlayerPrefs.SetFloat("rScr17", _rScr[17]);
             PlayerPrefs.SetFloat("avgScr1", _avgScr[1]);
             PlayerPrefs.SetFloat("avgScr2", _avgScr[2]);
             PlayerPrefs.SetFloat("avgScr3", _avgScr[3]);
@@ -167,6 +192,12 @@ namespace MyNamespace
             PlayerPrefs.SetFloat("avgScr9", _avgScr[9]);
             PlayerPrefs.SetFloat("avgScr10", _avgScr[10]);
             PlayerPrefs.SetFloat("avgScr11", _avgScr[11]);
+            PlayerPrefs.SetFloat("avgScr12", _avgScr[12]);
+            PlayerPrefs.SetFloat("avgScr13", _avgScr[13]);
+            PlayerPrefs.SetFloat("avgScr14", _avgScr[14]);
+            PlayerPrefs.SetFloat("avgScr15", _avgScr[15]);
+            PlayerPrefs.SetFloat("avgScr16", _avgScr[16]);
+            PlayerPrefs.SetFloat("avgScr17", _avgScr[17]);
             PlayerPrefs.SetInt("numPly1", _numPly[1]);
             PlayerPrefs.SetInt("numPly2", _numPly[2]);
             PlayerPrefs.SetInt("numPly3", _numPly[3]);
@@ -178,25 +209,38 @@ namespace MyNamespace
             PlayerPrefs.SetInt("numPly9", _numPly[9]);
             PlayerPrefs.SetInt("numPly10", _numPly[10]);
             PlayerPrefs.SetInt("numPly11", _numPly[11]);
+            PlayerPrefs.SetInt("numPly12", _numPly[12]);
+            PlayerPrefs.SetInt("numPly13", _numPly[13]);
+            PlayerPrefs.SetInt("numPly14", _numPly[14]);
+            PlayerPrefs.SetInt("numPly15", _numPly[15]);
+            PlayerPrefs.SetInt("numPly16", _numPly[16]);
+            PlayerPrefs.SetInt("numPly17", _numPly[17]);
             PlayerPrefs.SetString("PlyrNm", _playerName);
             PlayerPrefs.SetFloat("mVol", _masterVolume);
             PlayerPrefs.SetFloat("aVol", _ambienceVolume);
             PlayerPrefs.SetFloat("eVol", _sfxVolume);
+            PlayerPrefs.Save();
         }
 
         public void GetFromPlayerPref()
         {
-            _rScr[1] = PlayerPrefs.GetInt("rScr1");
-            _rScr[2] = PlayerPrefs.GetInt("rScr2");
-            _rScr[3] = PlayerPrefs.GetInt("rScr3");
-            _rScr[4] = PlayerPrefs.GetInt("rScr4");
-            _rScr[5] = PlayerPrefs.GetInt("rScr5");
-            _rScr[6] = PlayerPrefs.GetInt("rScr6");
-            _rScr[7] = PlayerPrefs.GetInt("rScr7");
-            _rScr[8] = PlayerPrefs.GetInt("rScr8");
-            _rScr[9] = PlayerPrefs.GetInt("rScr9");
-            _rScr[10] = PlayerPrefs.GetInt("rScr10");
-            _rScr[11] = PlayerPrefs.GetInt("rScr11");
+            _rScr[1] = PlayerPrefs.GetFloat("rScr1");
+            _rScr[2] = PlayerPrefs.GetFloat("rScr2");
+            _rScr[3] = PlayerPrefs.GetFloat("rScr3");
+            _rScr[4] = PlayerPrefs.GetFloat("rScr4");
+            _rScr[5] = PlayerPrefs.GetFloat("rScr5");
+            _rScr[6] = PlayerPrefs.GetFloat("rScr6");
+            _rScr[7] = PlayerPrefs.GetFloat("rScr7");
+            _rScr[8] = PlayerPrefs.GetFloat("rScr8");
+            _rScr[9] = PlayerPrefs.GetFloat("rScr9");
+            _rScr[10] = PlayerPrefs.GetFloat("rScr10");
+            _rScr[11] = PlayerPrefs.GetFloat("rScr11");
+            _rScr[12] = PlayerPrefs.GetFloat("rScr12");
+            _rScr[13] = PlayerPrefs.GetFloat("rScr13");
+            _rScr[14] = PlayerPrefs.GetFloat("rScr14");
+            _rScr[15] = PlayerPrefs.GetFloat("rScr15");
+            _rScr[16] = PlayerPrefs.GetFloat("rScr16");
+            _rScr[17] = PlayerPrefs.GetFloat("rScr17");
             _avgScr[1] = PlayerPrefs.GetFloat("avgScr1");
             _avgScr[2] = PlayerPrefs.GetFloat("avgScr2");
             _avgScr[3] = PlayerPrefs.GetFloat("avgScr3");
@@ -208,6 +252,12 @@ namespace MyNamespace
             _avgScr[9] = PlayerPrefs.GetFloat("avgScr9");
             _avgScr[10] = PlayerPrefs.GetFloat("avgScr10");
             _avgScr[11] = PlayerPrefs.GetFloat("avgScr11");
+            _avgScr[12] = PlayerPrefs.GetFloat("avgScr12");
+            _avgScr[13] = PlayerPrefs.GetFloat("avgScr13");
+            _avgScr[14] = PlayerPrefs.GetFloat("avgScr14");
+            _avgScr[15] = PlayerPrefs.GetFloat("avgScr15");
+            _avgScr[16] = PlayerPrefs.GetFloat("avgScr16");
+            _avgScr[17] = PlayerPrefs.GetFloat("avgScr17");
             _numPly[1] = PlayerPrefs.GetInt("numPly1");
             _numPly[2] = PlayerPrefs.GetInt("numPly2");
             _numPly[3] = PlayerPrefs.GetInt("numPly3");
@@ -219,11 +269,18 @@ namespace MyNamespace
             _numPly[9] = PlayerPrefs.GetInt("numPly9");
             _numPly[10] = PlayerPrefs.GetInt("numPly10");
             _numPly[11] = PlayerPrefs.GetInt("numPly11");
+            _numPly[12] = PlayerPrefs.GetInt("numPly12");
+            _numPly[13] = PlayerPrefs.GetInt("numPly13");
+            _numPly[14] = PlayerPrefs.GetInt("numPly14");
+            _numPly[15] = PlayerPrefs.GetInt("numPly15");
+            _numPly[16] = PlayerPrefs.GetInt("numPly16");
+            _numPly[17] = PlayerPrefs.GetInt("numPly17"); 
             _playerName = PlayerPrefs.GetString("PlyrNm");
             _masterVolume = PlayerPrefs.GetFloat("mVol");
             _ambienceVolume = PlayerPrefs.GetFloat("aVol");
             _sfxVolume = PlayerPrefs.GetFloat("eVol");
         }
+        
 
         #endregion
 

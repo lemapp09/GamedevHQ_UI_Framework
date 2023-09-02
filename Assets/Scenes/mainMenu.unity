@@ -1517,7 +1517,7 @@ MonoBehaviour:
 
     Geography
 
-    Quizz'
+    Quiz'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 97e083039e4b647849b66bd7762101e8, type: 2}
   m_sharedMaterial: {fileID: 7056286129738068879, guid: 97e083039e4b647849b66bd7762101e8,

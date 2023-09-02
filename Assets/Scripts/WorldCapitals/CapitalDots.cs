@@ -1,29 +1,29 @@
+using LemApperson.StateMaps;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 
 namespace LemApperson.WorldCapitals
 {
-    public class CapitalDots : MonoBehaviour,  IDropHandler, IPointerUpHandler
+    public class CapitalDots : MonoBehaviour,  IDropHandler
     {
-        [SerializeField] public string _countryID;
-        private Vector3 _initialPosition;
+        [SerializeField] public int _countryID;
+        [SerializeField] private Vector3 _initialPosition;
+        [SerializeField] private Score _score;
+
+        public void SetCountryID(int countryIndex){
+            _countryID = countryIndex;
+        }
         
-        
-        public void OnDrop(PointerEventData eventData)
-        {
-            Debug.Log("OnDrop: " + eventData.pointerDrag.name);
-            // String stateName = eventData.pointerDrag.GetComponent<StatePiece>()._stateName;
-            //    eventData.pointerDrag.transform.position = transform.position;
-            //    DraggableDot _draggableDot = eventData.pointerDrag.GetComponent<DraggableDot>();
-             //   _draggableDot.ReachedCapital(true);
-             //   AudioManager.Instance.PlayClick();
+        public void OnDrop(PointerEventData eventData) {
+            if (eventData.pointerDrag.GetComponent<DraggableDot>().GetCountryIndex() == _countryID) {
+                eventData.pointerDrag.transform.position = transform.position;
+                DraggableDot _draggableDot = eventData.pointerDrag.GetComponent<DraggableDot>();
+                _draggableDot.ReachedCapital(true);
+                AudioManager.Instance.PlayClick();
+                WorldCapitals.Instance.CapitalMatched();
+            }
         }
 
-
-        public void OnPointerUp(PointerEventData eventData)
-        {       
-            Debug.Log("OnPointerUp: " + eventData.pointerDrag.name);
-        }
     }
 }

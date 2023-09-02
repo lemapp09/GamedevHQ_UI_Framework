@@ -11,10 +11,10 @@ namespace LemApperson.StateMaps
     {
         [SerializeField] private GameObject _gameOverDisplay;
         [Tooltip("The number of the game this score represents. This is used to determine which game is won.")]
-        [Range(1, 11)]
+        [Range(1, 17)]
         [SerializeField] private int _gameNumber;
         private TextMeshProUGUI _scoreText;
-        private int _score, _flagCount;
+        private int _score, _flagCount, _capitalCount;
         private float _lengthOfPlay = 0;
         private float _startTime;
 
@@ -27,9 +27,9 @@ namespace LemApperson.StateMaps
         public void UpdateStateScore(string state)
         {
             string fullStateName = LookupState(state);
-            _score++;
+            _score += 10;
             _scoreText.text = "Score: " + _score.ToString() + " : " + fullStateName;
-            if (_score == 10) {
+            if (_score == 100) {
                 _lengthOfPlay = Time.time - _startTime;
                 AudioManager.Instance.PlayWin();
                 GameManager.Instance.GameWon(1, _score, _lengthOfPlay);
@@ -45,6 +45,20 @@ namespace LemApperson.StateMaps
             _score += score;
             _scoreText.text = "Score: " + _score.ToString() + " : " ;
             if (_flagCount == 18) {
+                _lengthOfPlay = Time.time - _startTime;
+                GameManager.Instance.GameWon(_gameNumber, _score, _lengthOfPlay);
+                _gameOverDisplay.SetActive(true);
+            }
+        }
+
+        public void UpdateCapitalScore(int score)
+        {
+            if (score > 0) {
+                _capitalCount++;
+            }
+            _score += score;
+            _scoreText.text = "Score: " + _score.ToString() + " : " ;
+            if (_capitalCount == 8) {
                 _lengthOfPlay = Time.time - _startTime;
                 GameManager.Instance.GameWon(_gameNumber, _score, _lengthOfPlay);
                 _gameOverDisplay.SetActive(true);

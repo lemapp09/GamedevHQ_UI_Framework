@@ -1,34 +1,42 @@
 using System;
 using System.Collections.Generic;
+using LemApperson.StateMaps;
+using MyNamespace;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace LemApperson.WorldCapitals
 {
-    public class WorldCapitals : MonoBehaviour
+    public class WorldCapitals : MonoSingleton<WorldCapitals>
     {
         // Country Index, Country Flag Index, Country Name,. Country Capital
         private List<(int, string, string, int, int, int)> _worldCapitals =
             new List<(int, string, string, int, int, int)>();
-        [SerializeField] private GameObject _countryTilePrefab, _capitalTilePrefab, _columnA, _columnB; 
+        [SerializeField] private GameObject _countryTilePrefab, _capitalTilePrefab, _columnA, _columnB;
+        [SerializeField] private Score _score;
         [Tooltip("The continent Code assigned to each continent")]
         [Range(0,5)]
         [SerializeField] private int _continentCode = 0;
         private Color[] _colors;
         private Sprite[] _spriteSheet;
         private List<int> _allCountries;
+        private Color[] _colorOrder;
         private int[] _countryList, _capitalList;
         
-        private void Start()
-        {
+        private void Start() {
             PopulateCapitalList();
             LoadSpriteSheets();
             _colors = new Color[16];
+            _colorOrder = new Color[280];
             PopulateColors();
             _allCountries = ReturnListByContinent(_continentCode);
             (_countryList, _capitalList) = SelectCountries();
             PopulateColA(_countryList);
             PopulateColB(_capitalList);
+        }
+
+        public void CapitalMatched() {
+            _score.UpdateCapitalScore(10);
         }
         
         private (int[], int[]) SelectCountries()
@@ -45,34 +53,37 @@ namespace LemApperson.WorldCapitals
 
         private void PopulateColA(int[] _countryList)
         {
-            // Use color 0 - 7
+            _countryList = Shuffle(_countryList);
             for (int i = 0; i < 8; i++)
             {
                 (int spriteSheet, int SpriteNumber) = ReturnSpriteFileInfo(_countryList[i]);
                 GameObject temp = Instantiate(_countryTilePrefab, _columnA.transform.position, Quaternion.identity, _columnA.transform);
                 CountryTile tempCountryTile = temp.GetComponent<CountryTile>();
-                // (int countryIndex, int tileIndex ,tring countryName,Sprite sprite, Color dotColor)
+                                // (int countryIndex, int tileIndex ,string countryName,Sprite sprite, Color dotColor)
                 tempCountryTile.SetCountryData(_countryList[i], i ,ReturnCountry(_countryList[i]),
                     GetSpriteFromSpriteSheet(_countryList[i] , spriteSheet, SpriteNumber), _colors[i]);
-                tempCountryTile.name = "CountrtyTile" + i.ToString();
+                tempCountryTile.name = "CountryTile_" + i.ToString();
+                _colorOrder[_countryList[i]] = _colors[i];
             }
         }
 
         private void PopulateColB(int[] _capitalList)
         {
-            // use colors 8 - 15
+            _capitalList = Shuffle(_capitalList);
             for (int i = 0; i < 8; i++)
             {
                 GameObject temp = Instantiate(_capitalTilePrefab, _columnB.transform.position, Quaternion.identity, _columnB.transform);
                 CapitalTile tempCapitalTile = temp.GetComponent<CapitalTile>();
+                Color tempColor = _colorOrder[_capitalList[i]];
                 // (string capitalName, int countryIndex, Color dotColor)
-                tempCapitalTile.SetCapitalData(ReturnCapital(_capitalList[i]), _countryList[i], _colors[i + 8]);
+                tempCapitalTile.SetCapitalData(ReturnCapital(_capitalList[i]), _capitalList[i], tempColor);
+                tempCapitalTile.name = "CapitalTile_" + i.ToString();
             }
         }
 
         private void PopulateColors()
         {
-            for (int i = 0; i < 16; i++)
+            for (int i = 0; i < 8; i++)
             {
                 string seed = Time.time.ToString ();
                 System.Random random = new System.Random (seed.GetHashCode ());
@@ -143,7 +154,6 @@ namespace LemApperson.WorldCapitals
 
         private void PopulateCapitalList()
         {
-
             _worldCapitals.Add((6, "Algeria", "Algiers", 0, 1, 0));
             _worldCapitals.Add((10, "Angola", "Luanda", 0, 2, 7));
             _worldCapitals.Add((25, "Benin", "Porto Novo, Cotonou", 0, 1, 22));
@@ -315,9 +325,9 @@ namespace LemApperson.WorldCapitals
             _worldCapitals.Add((98, "Jamaica", "Kingston", 3, 2, 77));
             _worldCapitals.Add((125, "Mexico", "Mexico City", 3, 2, 98));
             _worldCapitals.Add((137, "Nicaragua", "Managua", 3, 2, 115));
-            _worldCapitals.Add((151, "Puerto Rico", "San Juan (territory of U.S.)", 3, 2, 125));
+            _worldCapitals.Add((151, "Puerto Rico", "San Juan", 3, 2, 125));
             _worldCapitals.Add((198, "United States of America", "Washington, District of Columbia", 3, 2, 130));
-            _worldCapitals.Add((200, "US Virgin Islands", "Charlotte Amalie (territory of U.S.)", 3, 2, 43));
+            _worldCapitals.Add((200, "US Virgin Islands", "Charlotte Amalie", 3, 2, 43));
             _worldCapitals.Add((14, "Australia", "Canberra", 4, 2, 5));
             _worldCapitals.Add((70, "Federated States of Micronesia", "Palikir", 4, 2, 106));
             _worldCapitals.Add((71, "Fiji", "Suva", 4, 2, 55));
@@ -337,11 +347,11 @@ namespace LemApperson.WorldCapitals
             _worldCapitals.Add((44, "Chile", "Santiago", 5, 1, 30));
             _worldCapitals.Add((46, "Colombia", "Bogotá", 5, 1, 43));
             _worldCapitals.Add((61, "Ecuador", "Quito", 5, 2, 48));
-            _worldCapitals.Add((69, "Falkland Islands", "Stanley (territory of U.K.)", 5, 2, 46));
+            _worldCapitals.Add((69, "Falkland Islands", "Stanley", 5, 2, 46));
             _worldCapitals.Add((85, "Guyana", "Georgetown", 5, 2, 65));
             _worldCapitals.Add((147, "Paraguay", "Asunción", 5, 1, 128));
             _worldCapitals.Add((148, "Peru", "Lima", 5, 1, 125));
-            _worldCapitals.Add((172, "South Georgia and the South Sandwich Islands", "(territory of U.K.)", 5, 1, 139));
+            _worldCapitals.Add((172, "South Georgia and the South Sandwich Islands", "King Edward Point", 5, 1, 139));
             _worldCapitals.Add((176, "Suriname", "Paramaribo", 5, 2, 71));
             _worldCapitals.Add((190, "Trinidad and Tobago", "Port of Spain", 5, 2, 81));
             _worldCapitals.Add((199, "Uruguay", "Montevideo", 5, 2, 90));
@@ -354,12 +364,13 @@ namespace LemApperson.WorldCapitals
             int p = array.Length;
             for (int n = p - 1; n > 0; n--)
             {
+                // Change Random seed value
+                UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
                 int r = UnityEngine.Random.Range(0, n);
                 int t = array[r];
                 array[r] = array[n];
                 array[n] = t;
             }
-
             return array;
         }
     }

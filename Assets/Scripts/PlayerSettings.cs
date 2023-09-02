@@ -30,6 +30,7 @@ namespace LemApperson
 
         private void PopulateGrid()
         {
+            int displayLimit = 16;
             int numberOfGames = GameManager.Instance.NumberOfGames;
             for (int i = 1; i < numberOfGames; i++)
             {
@@ -39,6 +40,8 @@ namespace LemApperson
                     SettingsTile tile = newGameTile.GetComponent<SettingsTile>();
                     tile.SetData(gamesplayed,GetGameName(i),GameManager.Instance.GetAverage(i)); 
                 }
+                displayLimit--;
+                if (displayLimit < 1) { break; }
             }
         }
 
@@ -68,6 +71,18 @@ namespace LemApperson
                     return "Flags - Oceania";
                 case 11:
                     return "Flags - South America";
+                case 12:
+                    return "Capitals - Africa";
+                case 13:
+                    return "Capitals - Asia";
+                case 14:
+                    return "Capitals - Europe";
+                case 15:
+                    return "Capitals - North America";
+                case 16:
+                    return "Capitals - Oceania";
+                case 17:
+                    return "Capitals - South America";
                 default:
                     return "Game";
             }
