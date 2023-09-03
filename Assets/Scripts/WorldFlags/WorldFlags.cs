@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using LemApperson.StateMaps;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 namespace LemApperson.WorldFlags
@@ -20,9 +21,11 @@ namespace LemApperson.WorldFlags
         private WorldFlagTiles _tileGO1, _tileGO2;
         public int _currentGameScore, _currentFlagIndex, _score;
         private bool _isFirstTile;
-        private float _lengthOfplay;
+        private float _lengthOfplay, _inverseScreenResolution;
+        [SerializeField] private CanvasScaler canvasScaler;
 
         private void Start() {
+            _inverseScreenResolution = Screen.height / canvasScaler.referenceResolution.y ;
             displayOrder = new int[36];
             LoadSpriteSheets();
             PopulateFlagList();
@@ -89,6 +92,7 @@ namespace LemApperson.WorldFlags
         private void PopulateGridWithFlagTiles() {
             for (int i = 0; i < 36; i++) {
                 GameObject holderObject = Instantiate(_prefabWFTile, this.transform.position, Quaternion.identity );
+                holderObject.transform.localScale = new  Vector3(_inverseScreenResolution, _inverseScreenResolution, _inverseScreenResolution);
                 holderObject.transform.SetParent(this.transform);
                 var _tempTile = holderObject.GetComponent<WorldFlagTiles>();
                 (int _tempSheetNumber ,  int _tempSpriteNumber ) = ReturnSpriteFileInfo(displayOrder[i]);

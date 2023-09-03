@@ -2,7 +2,6 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using UnityEngine.UI.Extensions;
 using Random = UnityEngine.Random;
 
 namespace LemApperson.WorldCapitals
@@ -15,9 +14,13 @@ namespace LemApperson.WorldCapitals
         [SerializeField] private  GameObject _parentDot;
         [SerializeField] private UnityEngine.UI.Extensions.UILineRenderer _uiLineRenderer;
         [SerializeField] private bool _reachedCapitalSlot , _isWiggling;
+        private Vector2 _scaleReference;
 
         void Start()
         {
+            CanvasScaler canvasScaler = GetComponentInParent<CanvasScaler>();
+            _scaleReference = new Vector2(canvasScaler.referenceResolution.x / Screen.width,
+                canvasScaler.referenceResolution.y / Screen.height);
             _image = GetComponent<Image>();
             _isWiggling = true;
             StartCoroutine(Wiggling());
@@ -26,8 +29,8 @@ namespace LemApperson.WorldCapitals
         private void Update()
         {
             Vector2 point1 = new Vector2(0, 0);
-            Vector2 point2 = new Vector2(transform.position.x - _parentDot.transform.position.x,
-                transform.position.y - _parentDot.transform.position.y);
+            Vector2 point2 = new Vector2((transform.position.x - _parentDot.transform.position.x) * _scaleReference.y,
+                (transform.position.y - _parentDot.transform.position.y) * _scaleReference.y);
             Vector2[] line = { point1, point2 };
             _uiLineRenderer.Points = line;
         }

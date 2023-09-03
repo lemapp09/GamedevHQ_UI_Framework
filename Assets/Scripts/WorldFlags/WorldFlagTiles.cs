@@ -22,7 +22,7 @@ namespace LemApperson.WorldFlags
             _spriteNumber = SpriteNumber;
             _keyIndex = returnCountryIndex;
         }
-
+        
         public void SetFlagImage( Sprite  sprite) {
             _flagImage.sprite = sprite;
         }

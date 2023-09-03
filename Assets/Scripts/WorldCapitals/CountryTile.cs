@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,6 +15,7 @@ namespace LemApperson.WorldCapitals
         [SerializeField] private string _countryName;
         [SerializeField] private int _countryIndex, _tileIndex;
         [SerializeField] private Color _dotColor;
+        
 
         public void SetCountryData(int countryIndex, int tileIndex, string countryName,Sprite sprite, Color dotColor)
         {

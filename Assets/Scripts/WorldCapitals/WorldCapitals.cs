@@ -88,7 +88,7 @@ namespace LemApperson.WorldCapitals
                 string seed = Time.time.ToString ();
                 System.Random random = new System.Random (seed.GetHashCode ());
                 _colors[i] = new Color(
-                    Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f)
+                    Random.Range(0.5f, 1f), Random.Range(0.5f, 1f), Random.Range(0.5f, 1f)
                 );
             }
         }

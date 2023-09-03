@@ -3179,7 +3179,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1688, y: 2388}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -4323,7 +4323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a62d1b6f680043e2b218ef6e9c9115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ScreenNumberToLoad: 2
+  _ScreenNumberToLoad: 4
 --- !u!114 &1372948396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5900,7 +5900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a62d1b6f680043e2b218ef6e9c9115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ScreenNumberToLoad: 2
+  _ScreenNumberToLoad: 3
 --- !u!114 &2004225914
 MonoBehaviour:
   m_ObjectHideFlags: 0
